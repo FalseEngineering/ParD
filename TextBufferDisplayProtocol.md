@@ -4,8 +4,8 @@ ParD protocol name: "ParD-TEXTDSPL"
 ## Purpose and Requirements
 Used to control text buffer displays over ParD ports. A compliant display device meets certain requirements:
 - Display devices must be persistent; they don't require data to constantly be pushed to them.
-- Display devices must support inidividual character colouring with at least 2 foreground and 2 background colours. THey may support up to 16 foreground and 16 background colours. The colours themselves are unspecified.
--- The character encoding of a display device is left unspecified, but the display must provide an 8 byte identifier of its supported encoding upon request.
+- Display devices must support inidividual character colouring with at least 2 foreground and 2 background colours. They may support up to 16 foreground and 16 background colours. The colours themselves are unspecified.
+- The character encoding of a display device is left unspecified, but the display must provide an 8 byte identifier of its supported encoding upon request.
 
 ## Protocol
 The display device responds to a capabilities query but doesn't otherwise initiate transmissions. All transmission sequences from the host to the display begin with a type code:
