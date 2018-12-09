@@ -20,3 +20,5 @@ To assist device development, the ParD standard includes protocols for the follo
 - Text Buffer Displays
 - Palette Pixel Displays
 - Network Adapters
+
+Transmissions with zero length are a reserved message in ParD: they are protocol name requests. The receiver of a zero length transmission is expected to respond with the name of its protocol. The names of standardized protocols are listed on their pages. All host devices must respond with "ParD-HOST".
