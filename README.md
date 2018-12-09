@@ -11,7 +11,7 @@ When not transmitting, the host and client handshake pins are 0. To initiate a t
 
 A message is an 8 bit length packet followed by that many 8 bit data packets. Each packet is transmitted using the following protocol:
 - A sender may set the value in the data pins while the receiver handshake bit is equal to the sender handshake bit.
-- Once the pakcet is ready, the sender inverts its handshake bit. It may no longer change the data pins.
+- Once the packet is ready, the sender inverts its handshake bit. It may no longer change the data pins.
 - The receiver receives the packet. It acknowledges the packet has been received by inverting its handshake bit. The sender may change the data pins again.
 
 ## Standardized Device Protocols
