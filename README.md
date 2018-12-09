@@ -18,4 +18,5 @@ A message is an 8 bit length packet followed by that many 8 bit data packets. Ea
 To assist device development, the ParD standard includes protocols for the following types of devices:
 - Keyboards
 - Text Buffer Displays
-- Modems
+- Palette Pixel Displays
+- Network Adapters
